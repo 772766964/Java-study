@@ -8,13 +8,17 @@ package com.daily.Day2;
  **/
 public class StringText1 {
     public static void main(String[] args) {
-        //创建一个"abc"字符串对象，该对象的内存地址,让s1变量保存
-        //s1是一个引用，s1指向"abc"对象
+        /*
+         * 创建一个"abc"字符串对象，该对象的内存地址,让s1变量保存
+         * s1是一个引用，s1指向"abc"对象
+         */
         String s1 = "abc";
-        //可以让s1重新指向
-        //但是"def"字符串本身不可变
+        /*
+         * 可以让s1重新指向
+         * 但是"def"字符串本身不可变
+         */
         s1 = "def";
-        //在字符串常量池中新建一个"hello"字符串变量，该对象不可变
+         //  在字符串常量池中新建一个"hello"字符串变量，该对象不可变
         String s2 = "hello";
         //从字符串常量池中直接拿来用
         String s3 = "hello";
