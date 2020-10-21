@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 /**
  * @ClassName CPU
  * @Description TODO
- * @Author UnKnW
+ * @Author 1
  * @Date 2020/10/21
  **/
 @Data

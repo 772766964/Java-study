@@ -3,7 +3,7 @@ package com.xlRo.xl.p119;
 /**
  * @ClassName AAA
  * @Description 编程第一题:熟悉静态块
- * @Author UnKnW
+ * @Author 1
  * @Date 2020/10/21
  **/
 public class AAA {
