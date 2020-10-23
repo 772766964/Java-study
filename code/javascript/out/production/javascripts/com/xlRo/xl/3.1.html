@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    var isLeapYear = function(year){
+        /*闰年： 能被400整除　或者　能被4整除但不能被100整除*/
+        if (year%400==0 || (year%4==0 && year%100!=0))
+        {
+            console.log("%d年为闰年！\n", year);
+            return true;
+        }
+        else
+        {
+            console.log("%d年为非闰年！\n", year);
+            return false;
+        }
+    }
+    console.log(isLeapYear(2009));
+
+
+
+    ////==============================================
+
+    var score = [[100,90,98,82],[87,98,76,87],[78,79,67,97],[98,90,87,78]];
+    var avg = new Array();
+    for (var i = 0; i < 4; i++) {
+        for (var j = 0; j < 4; j++) {
+            avg[i] += score[j][i];
+        }
+        avg[i] = avg[i] / 4;
+    }
+    console.log(avg);
+
+
+
+
+    //------------------------------------------------
+
+    arr1=[1,2,3,4,3,5,6,2,7,2];
+    arr1.splice(arr1.indexOf(2),1);
+    arr1.splice(arr1.indexOf(2),1);
+    arr1.splice(arr1.indexOf(2),1);
+    arr1.splice(arr1.indexOf(2),1);
+    console.log(arr1);
+
+
+
+    <!--  =====================    -->
+
+    var arr1 = new Array();
+    var arr2 = new Array();
+    var a1=0,a2=0;
+    for (var i = 3; i <= 500; i++) {
+        if(i%3==0){
+            arr1[a1++]=i;
+        }
+        if(i%4==0){
+            arr2[a2++]=i;
+        }
+    }
+    var sum = arr1.concat(arr2);
+    var arr = sum.sort(function (a,b) {
+        return b-a;
+    });
+    for (var i = 0; i < arr.length;) {
+        if(arr[i] == arr[i+1]){
+            arr.splice( i + 1 , 1);
+        } else {
+            i++;
+        }
+    }
+    console.log(arr);
+</script>
+
+
+
+</body>
+</html>
