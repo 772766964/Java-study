@@ -14,7 +14,7 @@ package com.daily.Day4;
  * @Author 1
  * @Date 2020/10/23
  **/
-public class Day4_2 {
+public class MathDemo {
     public static void main(String[] args) {
         //获取绝对值
         System.out.println(Math.abs(3.14));

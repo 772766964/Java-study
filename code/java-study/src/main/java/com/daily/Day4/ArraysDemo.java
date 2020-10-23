@@ -17,7 +17,7 @@ import java.util.Arrays;
  * @Author 1
  * @Date 2020/10/23
  **/
-public class Day4_1 {
+public class ArraysDemo {
     public static void main(String[] args) {
         int[] intArray = {10,20,30};
         //将int[]数组按照默认格式变成字符串
