@@ -6,95 +6,15 @@
 </head>
 <body>
 
+    <script>
 
-<script type="text/javascript">
-    var arr = [[76,65,86,54],[100,52,82,92],[82,79,59,92]];
-    var sum = 0;
-    for (var i=0;i<arr.length;i++){
-        for(var j=0;j<arr[i].length;j++){
-            sum+=arr[i][j];
+        function func1(fn) {
+            fn();
         }
-        document.write("平均成绩为"+sum/4+" ");
-        sum=0;
-    }
-</script>
-
-
-<script>
-
-    var isLeapYear = function(year){
-        if (year%400==0 || (year%4==0 && year%100!=0))
-        {
-            console.log("%d年为闰年！\n", year);
-            return true;
-        }
-        else
-        {
-            console.log("%d年为非闰年！\n", year);
-            return false;
-        }
-    }
-    console.log(isLeapYear(2000));
-
-
-
-
-
-    ////==============================================
-
-    var score = [[100,92,88,78],[24,33,65,75]];
-    // console.log(score);
-    var avg = 0;
-    for (var i = 0; i < score.length; i++) {
-        for (var j = 0; j < score[i].length; j++) {
-            avg += score[i][j];
-        }
-        console.log( avg/4 );
-    }
-    // console.log(avg);
-
-
-
-console.log("-------------");
-    //------------------------------------------------
-
-    arr1=[1,2,3,4,3,5,6,2,7,2];
-    arr1.splice(arr1.indexOf(2),1);
-    arr1.splice(arr1.indexOf(2),1);
-    arr1.splice(arr1.indexOf(2),1);
-    arr1.splice(arr1.indexOf(2),1);
-    console.log(arr1);
-
-
-
-    <!--  =====================    -->
-
-    var arr1 = new Array();
-    var arr2 = new Array();
-    var a1=0,a2=0;
-    for (var i = 3; i <= 500; i++) {
-        if(i%3==0){
-            arr1[a1++]=i;
-        }
-        if(i%4==0){
-            arr2[a2++]=i;
-        }
-    }
-    var sum = arr1.concat(arr2);
-    var arr = sum.sort(function (a,b) {
-        return b-a;
-    });
-    for (var i = 0; i < arr.length;) {
-        if(arr[i] == arr[i+1]){
-            arr.splice( i + 1 , 1);
-        } else {
-            i++;
-        }
-    }
-    console.log(arr);
-</script>
-
-
+        func1(function (a,b) {
+            console.log(a + "，" +b);
+        }(2,3));
+    </script>
 
 </body>
 </html>
